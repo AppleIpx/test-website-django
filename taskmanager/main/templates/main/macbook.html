@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}MacBook{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-4">MacBook Pro</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/macbook_pro.jpg' %}" class="img-fluid" alt="MacBook Pro">
+        </div>
+        <div class="col-md-6">
+            <h2>Производительность на высоте</h2>
+            <p>Идеальный ноутбук для разработчиков, дизайнеров и всех, кто требует максимума от техники.</p>
+            <ul>
+                <li>Чип Apple M4 Pro</li>
+                <li>14-дюймовый Retina дисплей</li>
+                <li>До 18 часов автономной работы</li>
+                <li>Молниеносное SSD-хранилище</li>
+            </ul>
+            <a href="#" class="btn btn-success btn-lg mt-3">Купить сейчас</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

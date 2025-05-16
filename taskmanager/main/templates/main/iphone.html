@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}iPhone{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+{#    <h1 class="text-center mb-4"></h1>#}
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/iphone_16_128_gb_ultramarin.jpg' %}" class="img-fluid" alt="iPhone 16">
+        </div>
+        <div class="col-md-6">
+            <h2>iPhone 16</h2>
+            <p>Ультрасовременный смартфон с невероятной производительностью и камерой профессионального уровня.</p>
+            <ul>
+                <li>Дисплей Super Retina XDR</li>
+                <li>Камера 48 Мп с ночным режимом</li>
+                <li>Процессор A18 Bionic</li>
+                <li>Поддержка 5G</li>
+            </ul>
+            <a href="#" class="btn btn-success btn-lg mt-3">Купить сейчас</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

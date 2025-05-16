@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}AirPods{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-4">AirPods Pro</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/airpods.jpg' %}" class="img-fluid" alt="AirPods Pro">
+        </div>
+        <div class="col-md-6">
+            <h2>Звук нового уровня</h2>
+            <p>Погрузитесь в музыку с адаптивным шумоподавлением и кристально чистым звуком.</p>
+            <ul>
+                <li>Шумоподавление нового поколения</li>
+                <li>Прозрачный режим</li>
+                <li>До 30 часов прослушивания с кейсом</li>
+                <li>Поддержка «Найти устройство»</li>
+            </ul>
+            <a href="#" class="btn btn-success btn-lg mt-3">Купить сейчас</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
