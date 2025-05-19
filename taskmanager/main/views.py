@@ -22,7 +22,7 @@ def macbook_view(request):
 
 
 def airpods_view(request):
-    return (render(request, "main/airpods.html"),)
+    return render(request, "main/airpods.html")
 
 
 def login_view(request):
